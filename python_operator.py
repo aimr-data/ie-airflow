@@ -25,11 +25,11 @@ from airflow.operators.python import PythonOperator, PythonVirtualenvOperator
 from airflow.utils.dates import days_ago
 
 args = {
-    'owner': 'airflow',
+    'owner': 'admin',
 }
 
 with DAG(
-    dag_id='example_python_operator',
+    dag_id='ie_python_operator',
     default_args=args,
     schedule_interval=None,
     start_date=days_ago(2),
